@@ -10,16 +10,21 @@ TEMP_PATH="/tmp/SoftCam.Key"
 BASE_DIR="/etc/tuxbox/config"
 
 # طباعة شعار MAJOR بـ ASCII Art
-echo "====================================================================="
-echo "  __  __    _      _  ____  ____     ____     _    _   _ _____ _     "
-echo " |  \/  |  / \    | |/ __ \|  _ \   |  _ \   / \  | \ | | ____| |    "
-echo " | |\/| | / _ \   | | |  | | |_) |  | |_) | / _ \ |  \| |  _| | |    "
-echo " | |  |  / ___ \ _|_| |  | |  _ <   |  __/ / ___ \| |\  | |___| |___ "
-echo " |_|  |_/_/   \_\___|\____/|_| \_\  |_|   /_/   \_\_| \_|_____|_____|"
-echo "                                                                     "
-echo "                        SOFTCAM SCRIPT UPDATER                       "
-echo "                       Developed by: John Kamel                      "
-echo "====================================================================="
+printf '%s\n' '==============================================='
+printf '%s\n' '   __  __    ___         _     ___     ____    '
+printf '%s\n' '  |  \/  |  / _ \       | |   / _ \   |  _ \   '
+printf '%s\n' '  | |\/| | | |_| |      | |  | | | |  | |_) |  '
+printf '%s\n' '  | |  | | |  _  |   _ _| |  | |_| |  |  _ <   '
+printf '%s\n' '  |_|  |_| |_| |_|   \___/    \___/   |_| \_\  '
+printf '%s\n' '   ____      ___     _   _    _____    _       '
+printf '%s\n' '  |  _ \    / _ \   | \ | |  | ____|  | |      '
+printf '%s\n' '  | |_) |  | |_| |  |  \| |  |  _|    | |      '
+printf '%s\n' '  |  __/   |  _  |  | |\  |  | |___   | |___   '
+printf '%s\n' '  |_|      |_| |_|  |_| \_|  |_____|  |_____|  '
+printf '%s\n' '==============================================='
+printf '%s\n' '           SOFTCAM KEY SCRIPT UPDATER          '
+printf '%s\n' '            Developed by: John Kamel           '
+printf '%s\n' '==============================================='
 
 echo "[*] Fetching latest SoftCam.Key from GitHub..."
 wget -q --no-check-certificate "$GITHUB_URL" -O "$TEMP_PATH"
